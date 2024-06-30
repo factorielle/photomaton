@@ -1,0 +1,47 @@
+nav{
+    border-bottom: 2px solid grey;
+    width:  100%;
+
+}
+.icon {
+    display: flex;
+    background-color: var(--couleur);
+    color: white;
+    font-weight: bold;
+}
+.icon li i{
+    color: var(--couleur);
+}
+.current{
+    color: var(--couleur);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: var(--couleur);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+
+
+
+
+/* Media queries for responsive behavior */
+@media (max-width: 992px) {
+  /* Collapse navbar on small screens */
+  .navbar-collapse {
+    display: none;
+  }
+
+  /* Show navbar on button click */
+  .navbar-toggler {
+    display: flex;
+  }
+}
+
+/* Flexbox for navigation links */
+.navbar-nav {
+  display: flex;
+  flex-direction: row; /* Arrange links horizontally */
+}

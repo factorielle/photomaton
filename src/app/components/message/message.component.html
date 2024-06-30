@@ -1,0 +1,122 @@
+<div id="viewport">
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <header  style="background-color: var(--couleur); color: white;">
+        <a class="mt-5 fw-bold text-center">LOGO</a>
+      </header>
+      <ul class="nav mt-5">
+        <li>
+          <a class="text-white  " [routerLink]="['/reservation']">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 2048 2048"><path fill="currentColor" d="M896 512v128H512V512zM512 896V768h384v128zm0 256v-128h256v128zM384 512v128H256V512zm0 256v128H256V768zm-128 384v-128h128v128zM128 128v1792h640v128H0V0h1115l549 549v219h-128V640h-512V128zm1024 91v293h293zm640 805h256v1024H896V1024h256V896h128v128h384V896h128zm128 896v-512h-896v512zm0-640v-128h-896v128z"/></svg> Reservations
+          </a>
+        </li>
+        <li>
+          <a class="text-white " [routerLink]="['/cadrage']">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="currentColor" d="m6.76 6l.45.89L7.76 8H12v5H4V6zm.62-2H3a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H9l-.72-1.45a1 1 0 0 0-.9-.55m15.38 2l.45.89l.55 1.11H28v5h-8V6zm.62-2H19a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-4l-.72-1.45a1 1 0 0 0-.9-.55M6.76 19l.45.89l.55 1.11H12v5H4v-7zm.62-2H3a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1H9l-.72-1.45a1 1 0 0 0-.9-.55m15.38 2l.45.89l.55 1.11H28v5h-8v-7zm.62-2H19a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1h-4l-.72-1.45a1 1 0 0 0-.9-.55"/></svg> Cadrages
+          </a>
+        </li>
+
+        <li>
+          <a class="text-white " [routerLink]="['/produit']">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm1-4h12l-3.75-5l-3 4L9 13z"/></svg>Photos
+          </a>
+        </li>
+        <li>
+          <a class="text-white active" [routerLink]="['/message']">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m-2 12H6v-2h12zm0-3H6V9h12zm0-3H6V6h12z"/></svg> Message
+          </a>
+        </li>
+      </ul>
+      <div class="logout " style="margin-top: 30vh;">
+        <p class="text-white mt-5 ms-3 fw-bold"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h7v2H5v14h7v2zm11-4l-1.375-1.45l2.55-2.55H9v-2h8.175l-2.55-2.55L16 7l5 5z"/></svg> Deconnexion</p>
+      </div>
+    </div>
+    <!-- Content -->
+    <div id="content">
+    
+      <div class="container-fluid">
+        <div class="head" style="height: 10vh;"></div>
+         <div class="stat ">
+            <div class="top  row  gap-4 ms-5 mx-auto ">
+                <div class="card col-12 col-md-4 " style="width: 18rem; border: 2px solid var(--couleur); color: var(--couleur);">
+                    
+                    <div class="card-body">
+                      <h5 class="card-title mb-3">Nombre de  <br> reservations</h5>
+                      <div class="footer">
+                        <span   class="fw-bold fs-3 "> 
+                            <svg  style="color:var(--couleur) !important" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                <g clip-path="url(#clip0_54_7)">
+                                <path d="M16 21.25V23.75H-1.5V21.25C-1.5 21.25 -1.5 16.25 7.25 16.25C16 16.25 16 21.25 16 21.25ZM11.625 9.375C11.625 8.50971 11.3684 7.66385 10.8877 6.94438C10.4069 6.22492 9.72367 5.66416 8.92424 5.33303C8.12481 5.00189 7.24515 4.91525 6.39648 5.08406C5.54781 5.25288 4.76826 5.66955 4.15641 6.28141C3.54455 6.89326 3.12787 7.67281 2.95906 8.52148C2.79025 9.37015 2.87689 10.2498 3.20803 11.0492C3.53916 11.8487 4.09992 12.5319 4.81938 13.0127C5.53885 13.4934 6.38471 13.75 7.25 13.75C8.41032 13.75 9.52312 13.2891 10.3436 12.4686C11.1641 11.6481 11.625 10.5353 11.625 9.375ZM15.925 16.25C16.6934 16.8447 17.3222 17.6005 17.7671 18.4644C18.212 19.3282 18.4621 20.2791 18.5 21.25V23.75H23.5V21.25C23.5 21.25 23.5 16.7125 15.925 16.25ZM14.75 5C13.8897 4.996 13.0485 5.25316 12.3375 5.7375C13.0968 6.79842 13.5051 8.07036 13.5051 9.375C13.5051 10.6796 13.0968 11.9516 12.3375 13.0125C13.0485 13.4968 13.8897 13.754 14.75 13.75C15.9103 13.75 17.0231 13.2891 17.8436 12.4686C18.6641 11.6481 19.125 10.5353 19.125 9.375C19.125 8.21468 18.6641 7.10188 17.8436 6.28141C17.0231 5.46094 15.9103 5 14.75 5Z" fill="#32468B"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_54_7">
+                                <rect width="30" height="30" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        45</span>
+                      </div>
+                     
+                    </div>
+                    
+                  </div>
+                <div class="card col-12 col-md-4 " style="width: 18rem; background-color: var(--couleur); color: white;">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Nombre de  <br> photos</h5>
+                        <div class="footer">
+                            <span   class="fw-bold fs-3 "> 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3c-5 0-9 4-9 9s4 9 9 9s9-4 9-9s-4-9-9-9m0 16c-3.9 0-7-3.1-7-7s3.1-7 7-7s7 3.1 7 7s-3.1 7-7 7m8.5 1.5c2.2-2.2 3.5-5.2 3.5-8.5s-1.3-6.3-3.5-8.5l-1.1 1.1c1.9 1.9 3.1 4.5 3.1 7.4s-1.2 5.5-3.1 7.4zM4.6 19.4c-1.9-1.9-3.1-4.5-3.1-7.4s1.2-5.5 3.1-7.4L3.5 3.5C1.3 5.7 0 8.7 0 12s1.3 6.3 3.5 8.5zm10.7-8.9c.66 0 1.2.67 1.2 1.5c0 .81-.55 1.5-1.2 1.5c-.37 0-.64-.21-.8-.39l-.03-.03l-.03-.03L13.38 12l1.09-1.08l.03-.03l.03-.03c.21-.23.47-.36.77-.36m-6.6 0c.37 0 .64.21.8.38v.04l.06.03L10.62 12l-1.09 1.08l-.03.03l-.03.04c-.21.22-.47.35-.77.35c-.65 0-1.2-.69-1.2-1.5s.55-1.5 1.2-1.5M15.3 9c-.72 0-1.4.31-1.88.85L12 11.25l-1.39-1.37C10.1 9.31 9.42 9 8.7 9C7.21 9 6 10.35 6 12s1.21 3 2.7 3c.72 0 1.4-.31 1.89-.85l1.41-1.4l1.39 1.37c.51.56 1.19.88 1.91.88c1.49 0 2.7-1.35 2.7-3c0-1.67-1.21-3-2.7-3"/></svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            45</span>
+                          </div>
+                       
+                      </div>
+                     
+                      
+                  </div>
+                <div class="card col-12 col-md-4 " style="width: 18rem; border: 2px solid var(--couleur); color: var(--couleur);">
+            
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Nombre de <br>  categories</h5>
+                        <div class="footer">
+                            <span   class="fw-bold fs-3 "> 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 2.8125C4.05245 2.8125 3.62322 2.99029 3.30676 3.30676C2.99029 3.62322 2.8125 4.05245 2.8125 4.5V25.5C2.8125 26.4325 3.5675 27.1875 4.5 27.1875H25.5C25.7216 27.1875 25.941 27.1439 26.1458 27.059C26.3505 26.9742 26.5365 26.8499 26.6932 26.6932C26.8499 26.5365 26.9742 26.3505 27.059 26.1458C27.1439 25.941 27.1875 25.7216 27.1875 25.5V4.5C27.1875 4.27839 27.1439 4.05896 27.059 3.85422C26.9742 3.64948 26.8499 3.46346 26.6932 3.30676C26.5365 3.15006 26.3505 3.02576 26.1458 2.94095C25.941 2.85615 25.7216 2.8125 25.5 2.8125H4.5ZM19.375 17.8125C18.9606 17.8125 18.5632 17.9771 18.2701 18.2701C17.9771 18.5632 17.8125 18.9606 17.8125 19.375C17.8125 19.7894 17.9771 20.1868 18.2701 20.4799C18.5632 20.7729 18.9606 20.9375 19.375 20.9375C19.7894 20.9375 20.1868 20.7729 20.4799 20.4799C20.7729 20.1868 20.9375 19.7894 20.9375 19.375C20.9375 18.9606 20.7729 18.5632 20.4799 18.2701C20.1868 17.9771 19.7894 17.8125 19.375 17.8125ZM9.0625 10.625C9.0625 10.2106 9.22712 9.81317 9.52015 9.52015C9.81317 9.22712 10.2106 9.0625 10.625 9.0625C11.0394 9.0625 11.4368 9.22712 11.7299 9.52015C12.0229 9.81317 12.1875 10.2106 12.1875 10.625C12.1875 11.0394 12.0229 11.4368 11.7299 11.7299C11.4368 12.0229 11.0394 12.1875 10.625 12.1875C10.2106 12.1875 9.81317 12.0229 9.52015 11.7299C9.22712 11.4368 9.0625 11.0394 9.0625 10.625ZM19.3375 9.3375C19.4233 9.24539 19.5268 9.17151 19.6418 9.12027C19.7568 9.06903 19.881 9.04148 20.0068 9.03926C20.1327 9.03704 20.2578 9.0602 20.3745 9.10735C20.4912 9.1545 20.5973 9.22468 20.6863 9.3137C20.7753 9.40273 20.8455 9.50877 20.8927 9.6255C20.9398 9.74224 20.963 9.86727 20.9607 9.99315C20.9585 10.119 20.931 10.2432 20.8797 10.3582C20.8285 10.4732 20.7546 10.5767 20.6625 10.6625L10.6625 20.6625C10.4848 20.8281 10.2497 20.9183 10.0068 20.914C9.76397 20.9097 9.53224 20.8113 9.36047 20.6395C9.18871 20.4678 9.09032 20.236 9.08603 19.9932C9.08175 19.7503 9.1719 19.5152 9.3375 19.3375L19.3375 9.3375Z" fill="#32468B"/>
+                                    </svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            45</span>
+                          </div>
+                         
+                       
+                      </div>
+                    
+                      
+                  </div>
+            
+            </div>
+            
+         </div>
+         <div class="middle">
+            <h4 class="text-center fw-700 mt-4">Liste des messages</h4>
+            <div class="cartes  g-3 ">
+                <div class="card   ms-5 col " >
+                    <ul class="mt-3 ">
+                        <li> <span class="fw-bold">Prenom:</span> Moussa</li>
+                        <li> <span class="fw-bold">Nom:</span> Basse</li>
+                    </ul>
+                    <ul class="mt-3 ">    
+                        <li> <span class="fw-bold">Numero:</span> 77 345 21 78</li>
+                        <li> <span class="fw-bold">Email:</span> Obelisque</li>
+                    </ul>
+                    <ul class="mt-3 ">
+                        <li> <span class="fw-bold">Sujet:</span>  Collaboration</li>
+                        <li> <span class="fw-bold">Message:</span> Je vous ecris aujourd'hui pour faire une demande de collaboration pour un shooting </li>
+                    </ul>
+                </div>
+              
+               
+              
+
+            </div>
+         </div>
+      </div>
+    </div>
+  </div>
