@@ -9,7 +9,7 @@ import { UserComponent } from './components/user/user.component';
 import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
-  {path:'accueil', component:AccueilComponent},
+  {path:'', component:AccueilComponent},
   {path:'reservation', component:ReservationComponent},
   {path:'cadrage', component:CategorieComponent},
   {path:'message', component:MessageComponent},
